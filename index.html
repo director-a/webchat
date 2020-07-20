@@ -9,21 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
-    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 <div class="container">
    <h1>WEBCHAT</h1>
    
-   <div class="messages-wrapper">
-       <div class="message">
-         <div class="message-nickname">Director:</div>
-         <div class="message-text">Hey, guys</div>
-       </div>
-       <div class="message">
-         <div class="message-nickname">Director:</div>
-         <div class="message-text">Hey, guys</div>
-       </div>    
+   <div id="messages" class="messages-wrapper">    
    </div>
    
    
@@ -31,14 +22,14 @@
       <div class="row">
          <div class="col-md-2">
            <sapn>Nick</sapn>
-            <textarea class="send-messages-input"></textarea>   
+            <textarea id="nickname-input" class="send-messages-input"></textarea>   
           </div>
           <div class="col-md-8">
             <sapn>Message</sapn>
-            <textarea class="send-messages-input"></textarea>   
+            <textarea id="message-input" class="send-messages-input"></textarea>   
           </div>
           <div class="col-md-2 send-messages-btn-wrapper">
-              <button class="send-messages-button btn btn-block btn-success" type="button">Send</button>
+              <button id="send-btn" class="send-messages-button btn btn-block btn-success" type="button">Send</button>
           </div>
       </div>
    </div>
@@ -51,6 +42,6 @@
     
 </div>
 
-    
+  <script type="text/javascript" src="main.js"></script>  
 </body>
 </html>
